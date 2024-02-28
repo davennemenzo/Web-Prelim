@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+    width: 130px;
+    height: 130px;
+}
+
+.bg {
+    opacity: 0.8; /* Adjust the opacity value as needed, 0.2 means 20% opacity */
+    width: 100%;
+    height: 100%; /* Set height to fill the container */
+    position: fixed; /* Position the element fixed on the viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: -1; /* Ensure the background stays behind other content */
+    pointer-events: none; /* Allow pointer events to pass through */
+    transition: opacity 0.3s ease; /* Add transition for smoothness */
+}
+
+@media screen and (max-width: 600px) {
+    .bg {
+        display: none; /* Hide background on small screens */
+    }
+}
+
+.text-box h2 {
+    font-size: 50px;
+    font: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.text-box p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: solid black;
+}
+
+h2 {
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 80%; /* Adjust width to fit the viewport */
+    max-width: 600px; /* Limit maximum width */
+    height: 400px; /* Let height adjust accordingly */
+    border: 20px solid transparent; /* Add transparent border */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    margin: 0 auto; /* Center the container */
+}
+
+.image-container img {
+    width: 100%; /* Make images fill container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Enlarge hovered image slightly on hover */
+}
+
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 30px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align footer content */
+}
+
+.footer-content, .footer-social {
+    width: 100%; /* Adjust width to fit the viewport */
+    float: none; /* Remove float for responsive layout */
+    text-align: center; /* Center align content */
+}
+
+.footer-content h3, .footer-social h3 {
+    color: #fff; /* Heading color */
+    font-size: large;
+}
+
+.footer-content p, .footer-social p {
+    margin: 10px 0; /* Margin for paragraphs */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
